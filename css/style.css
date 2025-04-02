@@ -65,7 +65,7 @@ body {
 }
 #menu>#menu_content>.list>.item.active>.item-header,
 #menu>#menu_content>.list>.item>.item-header:hover{
-    background-color: #e2e2e2;
+    background-color: red;
 }
 #menu>#menu_content>.list>.item>.item-header:hover>a {
     margin-left: 5px;
