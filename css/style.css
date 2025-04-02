@@ -63,6 +63,10 @@ body {
     font-weight: 600;
     font-size: 17px;
 }
+#menu>#menu_content>.list>.item.active>.item-header,
+#menu>#menu_content>.list>.item>.item-header:hover{
+    background-color: #e2e2e2;
+}
 #menu>#menu_content>.list>.item>.item-header:hover>a {
     margin-left: 5px;
 }
