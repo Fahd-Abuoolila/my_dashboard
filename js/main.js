@@ -1,13 +1,20 @@
-let items = document.querySelectorAll(".item");
+$(document).ready(function () {
+    $('.item-header').click(function () {
+        // إظهار أو إخفاء القائمة الفرعية عند النقر
+        const otherList = $(this).siblings('.other-list');
+        otherList.slideToggle(400, function () {
+            // التحقق إذا كانت القائمة الفرعية مخفية
+            if (!otherList.is(':visible')) {
+                $(this).parent().removeClass('active');
+            }
+        });
 
-items.forEach(item => {
-    // إضافة مستمع للنقر على العنصر
-    item.addEventListener("click", () => {
-        if (item.classList.contains("active")) {
-            item.classList.remove("active");
-        }else {
-            items.forEach(i => i.classList.remove("active"));
-            item.classList.toggle("active");
-        }
+        // إغلاق القوائم الفرعية الأخرى
+        $(this).parent().siblings().find('.other-list').slideUp(400, function () {
+            $(this).parent().removeClass('active'); // إزالة الـ class "active" عند الإخفاء
+        });
+
+        // إضافة class "active" إلى العنصر الحالي
+        $(this).parent().addClass('active');
     });
 });
