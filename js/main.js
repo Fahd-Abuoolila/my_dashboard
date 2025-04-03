@@ -18,3 +18,10 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     });
 });
+
+let dropdown = document.querySelector('.dropdown');
+let dropdownBtn = document.querySelector('.profile');
+
+dropdownBtn.addEventListener('click', function () {
+    dropdown.classList.toggle('show-dropdown');
+});
