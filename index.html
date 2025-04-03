@@ -8,17 +8,13 @@
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>fahd.abuoolila</title>
+        <title>Fahd.Abuoolila | System</title>
     </head>
     <body>
         <header class="dashboard-header">
             <div class="logo">
                 <img src="img/logo.png" alt="Company Logo">
                 <h1>Fahd.Abuoolila</h1>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <i class="bi bi-search"></i>
             </div>
             <div class="profile">
                 <div class="img_box">
@@ -36,17 +32,22 @@
                     <i class="bi bi-envelope"></i>
                     <p>fahdabuoolila.px@gmail.com</p>
                 </div>
-                <div class="drop-item">
+                <div class="drop-item logout">
                     <i class="bi bi-box-arrow-right"></i>
                     <p>logout</p>
                 </div>
             </div>
         </header>
-        <div id="menu">
+        <div id="menu" class="">
+            <button id="btn-close-menu">
+                <div>
+                    <i class="bi bi-arrow-left-circle"></i>
+                </div>
+            </button>
             <div id="menu_content">
                 <ul class="list">
                     <li class="item main">
-                        <div class="item-header">
+                        <div class="item-header opened">
                             <a href="index.html">
                                 <i class="bi bi-house"></i>
                                 <p>dashboard</p>
@@ -63,32 +64,32 @@
                         </div>
                         <ul class="other-list">
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
-                                    <p>All Projects:</p>
+                                <a href="allproducts.html">
+                                    <i class="bi bi-boxes"></i>
+                                    <p>All Projects</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="activeproducts.html">
+                                    <i class="bi bi-activity"></i>
                                     <p>Active Projects</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="completedproducts.html">
+                                    <i class="bi bi-check2-all"></i>
                                     <p>Completed Projects</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="productdetails.html">
+                                    <i class="bi bi-joystick"></i>
                                     <p>Project Details</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="milestones.html">
+                                    <i class="bi bi-journal-check"></i>
                                     <p>Milestones</p>
                                 </a>
                             </li>
@@ -104,28 +105,45 @@
                         </div>
                         <ul class="other-list">
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="clientlist.html">
+                                    <i class="bi bi-person-lines-fill"></i>
                                     <p>Client List</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="clientdetails.html">
+                                    <i class="bi bi-person-badge"></i>
                                     <p>Client Details</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="clientpayments.html">
+                                    <i class="bi bi-credit-card-2-front"></i>
                                     <p>Invoices & Payments</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
-                                    <p>Support Requests</p>
-                                </a>
+                                <div class="item-header-sec">
+                                    <a href="#">
+                                        <i class="bi bi-clock"></i>
+                                        <p>Support</p>
+                                    </a>
+                                    <i class="bi bi-caret-right-fill" class="arrow"></i>
+                                </div>
+                                <ul class="other-list">
+                                    <li class="item">
+                                        <a href="requestlist.html">
+                                            <i class="bi bi-filter-square"></i>
+                                            <p>Request List</p>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="supportteam.html">
+                                            <i class="bi bi-headset"></i>
+                                            <p>Support Team</p>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -139,33 +157,27 @@
                         </div>
                         <ul class="other-list">
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="invoice.html">
+                                    <i class="bi bi-receipt"></i>
                                     <p>All Invoices</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="pendingpayments.html">
+                                    <i class="bi bi-hourglass-split"></i>
                                     <p>Pending Payments</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="paidinvoices.html">
+                                    <i class="bi bi-cash-coin"></i>
                                     <p>Paid Invoices</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="generateinvoice.html">
+                                    <i class="bi bi-journal-plus"></i>
                                     <p>Generate Invoice</p>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
-                                    <p>Payment Methods</p>
                                 </a>
                             </li>
                         </ul>
@@ -180,32 +192,26 @@
                         </div>
                         <ul class="other-list">
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="tasklist.html">
+                                    <i class="bi bi-card-list"></i>
                                     <p>Task List</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="assignedtasks.html">
+                                    <i class="bi bi-broadcast"></i>
                                     <p>Assigned to Me</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="completedtasks.html">
+                                    <i class="bi bi-bag-check-fill"></i>
                                     <p>Completed Tasks</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
-                                    <p>Support Tickets</p>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="createtask.html">
+                                    <i class="bi bi-node-plus"></i>
                                     <p>Create Task</p>
                                 </a>
                             </li>
@@ -221,27 +227,21 @@
                         </div>
                         <ul class="other-list">
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="teammembers.html">
+                                    <i class="bi bi-person-bounding-box"></i>
                                     <p>Team Members</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="roles.html">
+                                    <i class="bi bi-toggles"></i>
                                     <p>Roles & Permissions</p>
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
+                                <a href="activitylogs.html">
+                                    <i class="bi bi-headset-vr"></i>
                                     <p>Activity Logs</p>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="#">
-                                    <i class="bi bi-people"></i>
-                                    <p>Assign to Projects</p>
                                 </a>
                             </li>
                         </ul>
@@ -443,9 +443,10 @@
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="#">
+                                <a href="notifications.html">
                                     <i class="bi bi-people"></i>
                                     <p>Notifications</p>
+                                    <span id="numOFnotification">12</span>
                                 </a>
                             </li>
                         </ul>
