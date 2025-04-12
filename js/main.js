@@ -66,9 +66,9 @@ let dark = document.querySelector('#dark');
 let htmlElement = document.documentElement;
 
 
-window.addEventListener('DOMContentLoaded', function () {
+window.onload = function () {
     let theme = localStorage.getItem('theme');
-    if (theme) {
+    if (theme !== '') {
         htmlElement.setAttribute('data-bs-theme', theme);
     } else {
         htmlElement.setAttribute('data-bs-theme', 'light');
@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function () {
         dark.classList.add('true');
         light.classList.remove('true');
     }
-});
+};
 light.addEventListener('click', function () {
     changemode('light');
     console.log('light');
