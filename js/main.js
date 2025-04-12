@@ -67,8 +67,8 @@ let htmlElement = document.documentElement;
 
 
 window.onload = function () {
-    let theme = localStorage.getItem('theme');
-    if (theme !== '') {
+    let theme = localStorage.setItem('theme','light');
+    if (theme) {
         htmlElement.setAttribute('data-bs-theme', theme);
     } else {
         htmlElement.setAttribute('data-bs-theme', 'light');
