@@ -37,29 +37,6 @@ $(document).ready(function () {
     });
 });
 
-// let dropdown = document.querySelector('.dropdown');
-// let dropdownBtn = document.querySelector('.profile');
-
-// dropdownBtn.addEventListener('click', function () {
-//     dropdown.classList.toggle('show-dropdown');
-// });
-// menu
-// let menu = document.querySelector('#menu');
-// let btn_close_menu = document.querySelector('#btn-close-menu');
-
-// btn_close_menu.addEventListener('click', function () {
-//     menu.classList.toggle('menu-opened');
-// });
-// function checkScreenWidth() {
-//     if (window.innerWidth <= 1000) {
-//         menu.classList.remove('menu-opened');
-//     }else {
-//         menu.classList.add('menu-opened');
-//     }
-// }
-// window.addEventListener('resize', checkScreenWidth);
-// checkScreenWidth();
-
 // select mode
 let light = document.querySelector('#light');
 let dark = document.querySelector('#dark');
@@ -67,24 +44,28 @@ let htmlElement = document.documentElement;
 
 
 window.onload = function () {
-    let theme;
-    if(localStorage.getItem('theme') == null){
-        localStorage.setItem('theme','light')
-        let theme = localStorage.getItem('theme');
-    }
-    if (theme) {
-        htmlElement.setAttribute('data-bs-theme', theme);
-    } else {
-        htmlElement.setAttribute('data-bs-theme', 'light');
-    }
-    if(theme == 'light'){
+    let theme = localStorage.getItem('theme');
+    if(theme == null || theme == '' || theme == undefined){
+        changemode('light');
         light.classList.add('true');
         dark.classList.remove('true');
-    }else{
-        dark.classList.add('true');
-        light.classList.remove('true');
+    } else {
+        if(theme == 'light'){
+            light.classList.add('true');
+            dark.classList.remove('true');
+            changemode('light');
+        }else{
+            dark.classList.add('true');
+            light.classList.remove('true');
+            changemode('dark');
+        }
+        htmlElement.setAttribute('data-bs-theme', theme);
     }
 };
+function changemode(mode) {
+    localStorage.setItem('theme', mode);
+    htmlElement.setAttribute('data-bs-theme', mode);
+}
 light.addEventListener('click', function () {
     changemode('light');
     console.log('light');
@@ -98,10 +79,7 @@ dark.addEventListener('click', function () {
     light.classList.remove('true');
 });
 
-function changemode(mode) {
-    localStorage.setItem('theme', mode);
-    htmlElement.setAttribute('data-bs-theme', mode);
-}
+
 
 const settings_menu = document.querySelector(".settings-menu");
 document.addEventListener("DOMContentLoaded", () => {
@@ -120,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const menu = document.querySelector("#menu");
+const menu = document.querySelector(".big-menu");
 document.addEventListener("DOMContentLoaded", () => {
     const menu_btn = document.querySelector("#menu_btn");
     menu_btn.addEventListener("click", () => {
@@ -139,3 +117,34 @@ document.addEventListener("DOMContentLoaded", () => {
         e.stopPropagation();
     });
 });
+
+const small_menu = document.querySelector(".small-menu");
+document.addEventListener("DOMContentLoaded", () => {
+    const btn_menu = document.querySelector("#btn-menu");
+    btn_menu.addEventListener("click", () => {
+        small_menu.classList.toggle("open");
+    });
+});
+
+let dropdown = document.querySelector('.dropdown');
+let dropdownBtn = document.querySelector('.profile');
+
+dropdownBtn.addEventListener('click', function () {
+    dropdown.classList.toggle('show-dropdown');
+});
+
+// let menu = document.querySelector('#menu');
+// let btn_close_menu = document.querySelector('#btn-close-menu');
+
+// btn_close_menu.addEventListener('click', function () {
+//     menu.classList.toggle('menu-opened');
+// });
+// function checkScreenWidth() {
+//     if (window.innerWidth <= 1000) {
+//         menu.classList.remove('menu-opened');
+//     }else {
+//         menu.classList.add('menu-opened');
+//     }
+// }
+// window.addEventListener('resize', checkScreenWidth);
+// checkScreenWidth();

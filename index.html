@@ -13,6 +13,537 @@
         <title>Fahd.Abuoolila | System</title>
     </head>
     <body>
+        <header class="dashboard-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Company Logo">
+                </a>
+            </div>
+            <div class="right-side">
+                <div class="profile">
+                    <div class="img_box">
+                        <img src="img/profile.jpg" alt="Profile Picture">
+                    </div>
+                    <p>Fahd Abuoolila</p>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <button class="small-btn-menu" id="btn-menu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <div class="drop-item">
+                    <i class="bi bi-person"></i>
+                    <p>fahd.abuoolila</p>
+                </div>
+                <div class="drop-item">
+                    <i class="bi bi-envelope"></i>
+                    <p>fahdabuoolila.px@gmail.com</p>
+                </div>
+                <div class="drop-item logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <p>logout</p>
+                </div>
+            </div>
+        </header>
+        <aside id="menu" class="small-menu ">
+            <div class="menu-content">
+                <ul class="list">
+                    <li class="item main">
+                        <div class="item-header opened">
+                            <a href="index.html" class="active">
+                                <div>
+                                    <i class="bi bi-house"></i>
+                                    <p>dashboard</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-terminal"></i>
+                                    <p>products</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="allproducts.html">
+                                    <div>
+                                        <i class="bi bi-boxes"></i>
+                                        <p>All Projects</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="activeproducts.html">
+                                    <div>
+                                        <i class="bi bi-activity"></i>
+                                        <p>Active Projects</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="completedproducts.html">
+                                    <div>
+                                        <i class="bi bi-check2-all"></i>
+                                        <p>Completed Projects</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="productdetails.html">
+                                    <div>
+                                        <i class="bi bi-joystick"></i>
+                                        <p>Project Details</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="milestones.html">
+                                    <div>
+                                        <i class="bi bi-journal-check"></i>
+                                        <p>Milestones</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-people"></i>
+                                    <p>clients</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="clientlist.html">
+                                    <div>
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>Client List</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="clientdetails.html">
+                                    <div>
+                                        <i class="bi bi-person-badge"></i>
+                                        <p>Client Details</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="clientpayments.html">
+                                    <div>
+                                        <i class="bi bi-credit-card-2-front"></i>
+                                        <p>Invoices & Payments</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item other-header-list item-menu">
+                                <div class="item-header-sec">
+                                    
+                                    <a class="a-item-menu" href="#">
+                                        <div>
+                                            <p>Support</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <ul class="other-list">
+                                    <li class="item">
+                                        
+                                        <a href="requestlist.html">
+                                            <div>
+                                                <i class="bi bi-filter-square"></i>
+                                                <p>Request List</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        
+                                        <a href="supportteam.html">
+                                            <div>
+                                                <i class="bi bi-headset"></i>
+                                                <p>Support Team</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-wallet2"></i>
+                                    <p>payments</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="invoice.html">
+                                    <div>
+                                        <i class="bi bi-receipt"></i>
+                                        <p>All Invoices</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="pendingpayments.html">
+                                    <div>
+                                        <i class="bi bi-hourglass-split"></i>
+                                        <p>Pending Payments</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="paidinvoices.html">
+                                    <div>
+                                        <i class="bi bi-cash-coin"></i>
+                                        <p>Paid Invoices</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="generateinvoice.html">
+                                    <div>
+                                        <i class="bi bi-journal-plus"></i>
+                                        <p>Generate Invoice</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-bookmarks"></i>
+                                    <p>tasks</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="tasklist.html">
+                                    <div>
+                                        <i class="bi bi-card-list"></i>
+                                        <p>Task List</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="assignedtasks.html">
+                                    <div>
+                                        <i class="bi bi-broadcast"></i>
+                                        <p>Assigned to Me</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="completedtasks.html">
+                                    <div>
+                                        <i class="bi bi-bag-check-fill"></i>
+                                        <p>Completed Tasks</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="createtask.html">
+                                    <div>
+                                        <i class="bi bi-node-plus"></i>
+                                        <p>Create Task</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-diagram-3"></i>
+                                    <p>employees</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="teammembers.html">
+                                    <div>
+                                        <i class="bi bi-person-bounding-box"></i>
+                                        <p>Team Members</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="roles.html">
+                                    <div>
+                                        <i class="bi bi-toggles"></i>
+                                        <p>Roles & Permissions</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="activitylogs.html">
+                                    <div>
+                                        <i class="bi bi-headset-vr"></i>
+                                        <p>Activity Logs</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-bar-chart-line"></i>
+                                    <p>reports</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="revenue.html">
+                                    <div>
+                                        <i class="bi bi-clipboard-data"></i>
+                                        <p>Revenue Reports</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="teamroductivity.html">
+                                    <div>
+                                        <i class="bi bi-speedometer"></i>
+                                        <p>Team Productivity</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="bug.html">
+                                    <div>
+                                        <i class="bi bi-bug"></i>
+                                        <p>Bug & Issue Tracking</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header notification">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-bell"></i>
+                                    <p>notifications</p>
+                                </div>
+                                <div>
+                                    <span id="numOFnotification">27</span>
+                                    <i class="bi bi-caret-right-fill"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                <a href="#">
+                                    <div class="item-notification">
+                                        <i class="bi bi-exclamation-octagon"></i>
+                                        <p>System Alerts</p>
+                                    </div>
+                                    <span id="numOFnotification">20</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <div class="item-notification">
+                                        <i class="bi bi-info-circle"></i>
+                                        <p>Project Updates</p>
+                                    </div>
+                                    <span id="numOFnotification">5</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <div class="item-notification">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <p>Payment Alerts</p>
+                                    </div>
+                                    <span id="numOFnotification">2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-link-45deg"></i>
+                                    <p>API</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="api.html">
+                                    <div>
+                                        <i class="bi bi-key"></i>
+                                        <p>API Keys</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="libraries.html">
+                                    <div>
+                                        <i class="bi bi-layout-wtf"></i>
+                                        <p>Libraries</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-shield-lock"></i>
+                                    <p>security</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="history.html">
+                                    <div>
+                                        <i class="bi bi-clock-history"></i>
+                                        <p>Login History</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="block.html">
+                                    <div>
+                                        <i class="bi bi-ban"></i>
+                                        <p>Blocked Users</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-repeat"></i>
+                                    <p>integrations</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="github.html">
+                                    <div>
+                                        <i class="bi bi-github"></i>
+                                        <p>GitHub Integration</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item" disabled title="don't click here">
+                                
+                                <a href="#">
+                                    <div>
+                                        <i class="bi bi-paypal"></i>
+                                        <p>Payment Gateways</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="item-header">
+                            <a href="#">
+                                <div>
+                                    <i class="bi bi-gear"></i>
+                                    <p>settings</p>
+                                </div>
+                                <i class="bi bi-caret-right-fill"></i>
+                            </a>
+                        </div>
+                        <ul class="other-list">
+                            <li class="item">
+                                
+                                <a href="generalsettings.html">
+                                    <div>
+                                        <i class="bi bi-building-gear"></i>
+                                        <p>General Settings</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                
+                                <a href="usermanagement.html">
+                                    <div>
+                                        <i class="bi bi-person-gear"></i>
+                                        <p>User Management</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item" disabled>
+                                
+                                <a href="billing.html">
+                                    <div>
+                                        <i class="bi bi-transparency"></i>
+                                        <p>Billing & Subscription</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
         <aside class="left-side">
             <div class="left-side-content">
                 <div class="top">
@@ -39,7 +570,7 @@
                 </div>
                 <div class="bottom">
                     <div id="settings">
-                        <i class="bi bi-gear text-light"></i>
+                        <i class="bi bi-circle-half text-light"></i>
                     </div>
                     <div>
                         <a href="logout.html">
@@ -49,7 +580,7 @@
                 </div>
             </div>
         </aside>
-        <aside id="menu" class="open">
+        <aside id="menu" class=" big-menu open">
             <div class="logo-text text-light">
                 <h1>Fahd.Abuoolila</h1>
             </div>
@@ -550,8 +1081,31 @@
                 </ul>
             </div>
         </aside>
+
         <div class="content">
-            <div ></div>
+            <div class="body-content">
+                <div class="nav">
+                    <a href="index.html">
+                        <p>Dashboard</p>
+                    </a>
+                    <span class="text-light">/</span>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="img-card">
+                            <img src="img/profile.jpg" alt="person">
+                        </div>
+                        <div class="content-card">
+                            <div class="div-name">
+                                Hi, <span id="user_name" class="text-light">Fahd.Abuoolila</span>
+                            </div>
+                            <div class="div-job">
+                                <span id="user_job" class="text-light">manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- <header class="dashboard-header">
             <div class="logo">
