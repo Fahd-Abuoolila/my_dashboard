@@ -1,0 +1,22 @@
+
+[data-bs-theme="light"]:root {
+    --main-color: #3663ad;
+    --second-color: #f5f5f5;
+    --third-color: #ddd;
+    --fourth-color: #b15353;
+    --fifth-color: #fff;
+    --sixth-color: #676f7e;
+    --seventh-color: #e8e9f0;
+    --eighth-color: #313131;
+}
+
+[data-bs-theme="dark"]:root {
+    --main-color: #3489d5;
+    --second-color: #181717;
+    --third-color: #3c3c3c;
+    --fourth-color: #ff4d4d;
+    --fifth-color: #fff;
+    --sixth-color: #676f7e;
+    --seventh-color: #e8e9f0;
+    --eighth-color: #313131;
+}

@@ -38,8 +38,11 @@ $(document).ready(function () {
 });
 
 // select mode
-let light = document.querySelector('#light');
-let dark = document.querySelector('#dark');
+let light = document.querySelector('.left-side #light');
+let dark = document.querySelector('.left-side #dark');
+let light_sec = document.querySelector('.small-menu #light');
+let dark_sec = document.querySelector('.small-menu #dark');
+
 let htmlElement = document.documentElement;
 
 
@@ -48,15 +51,21 @@ window.onload = function () {
     if(theme == null || theme == '' || theme == undefined){
         changemode('light');
         light.classList.add('true');
+        light_sec.classList.add('true');
         dark.classList.remove('true');
+        dark_sec.classList.remove('true');
     } else {
         if(theme == 'light'){
             light.classList.add('true');
+            light_sec.classList.add('true');
             dark.classList.remove('true');
+            dark_sec.classList.remove('true');
             changemode('light');
         }else{
             dark.classList.add('true');
+            dark_sec.classList.add('true');
             light.classList.remove('true');
+            light_sec.classList.remove('true');
             changemode('dark');
         }
         htmlElement.setAttribute('data-bs-theme', theme);
@@ -70,17 +79,18 @@ light.addEventListener('click', function () {
     changemode('light');
     console.log('light');
     light.classList.add('true');
+    light_sec.classList.add('true');
     dark.classList.remove('true');
+    dark_sec.classList.remove('true');
 });
 dark.addEventListener('click', function () {
     changemode('dark');
     console.log('dark');
     dark.classList.add('true');
+    dark_sec.classList.add('true');
     light.classList.remove('true');
+    light_sec.classList.remove('true');
 });
-
-
-
 const settings_menu = document.querySelector(".settings-menu");
 document.addEventListener("DOMContentLoaded", () => {
     const settings = document.querySelector("#settings");
@@ -97,6 +107,60 @@ document.addEventListener("DOMContentLoaded", () => {
         e.stopPropagation();
     });
 });
+
+light_sec.addEventListener('click', function () {
+    changemode('light');
+    console.log('light');
+    light.classList.add('true');
+    light_sec.classList.add('true');
+    dark.classList.remove('true');
+    dark_sec.classList.remove('true');
+});
+dark_sec.addEventListener('click', function () {
+    changemode('dark');
+    console.log('dark');
+    dark.classList.add('true');
+    dark_sec.classList.add('true');
+    light.classList.remove('true');
+    light_sec.classList.remove('true');
+});
+const settings_menu_sec = document.querySelector(".settings-menu_sec");
+document.addEventListener("DOMContentLoaded", () => {
+    const settings_sec = document.querySelector("#settings_sec");
+    settings_sec.addEventListener("click", () => {
+        settings_menu_sec.classList.toggle("open");
+    });
+    document.addEventListener("click", (e) => {
+        if (e.target !== settings_menu_sec && e.target !== settings_sec && !settings_sec.contains(e.target)) {
+            settings_menu_sec.classList.remove("open");
+        }
+        console.log(e.target);
+    });
+    settings_menu.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+});
+
+setInterval(() => {
+    let theme = localStorage.getItem('theme');
+    if (theme === 'light') {
+        light_sec.classList.add('true');
+        light.classList.add('true');
+        dark_sec.classList.remove('true');
+        dark.classList.remove('true');
+        changemode('light');
+    }else {
+        dark_sec.classList.add('true');
+        dark.classList.add('true');
+        light_sec.classList.remove('true');
+        light.classList.remove('true');
+        changemode('dark');
+    }
+}, 2000);
+
+
+
+
 
 const menu = document.querySelector(".big-menu");
 document.addEventListener("DOMContentLoaded", () => {

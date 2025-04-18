@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- css -->
         <link rel="icon" href="img/logo.png">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/projects.css">
         <title>Fahd.Abuoolila | System</title>
     </head>
     <body>
@@ -19,12 +19,33 @@
                 </a>
             </div>
             <div class="right-side">
+                <button class="small-btn-menu" id="btn-menu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </header>
+        <aside id="menu" class="small-menu ">
+            <div class="small-menu-top">
                 <div class="profile">
                     <div class="img_box">
                         <img src="img/profile.jpg" alt="Profile Picture">
                     </div>
                     <p>Fahd Abuoolila</p>
                     <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="dropdown">
+                    <div class="drop-item">
+                        <i class="bi bi-person"></i>
+                        <p>fahd.abuoolila</p>
+                    </div>
+                    <div class="drop-item">
+                        <i class="bi bi-envelope"></i>
+                        <p>fahdabuoolila.px@gmail.com</p>
+                    </div>
+                    <div class="drop-item logout">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <p>logout</p>
+                    </div>
                 </div>
                 <div class="settings-menu_sec">
                     <div class="settings-menu-content">
@@ -42,31 +63,12 @@
                 <div id="settings_sec">
                     <i class="bi bi-circle-half text-light"></i>
                 </div>
-                <button class="small-btn-menu" id="btn-menu">
-                    <i class="bi bi-list"></i>
-                </button>
             </div>
-            <div class="dropdown">
-                <div class="drop-item">
-                    <i class="bi bi-person"></i>
-                    <p>fahd.abuoolila</p>
-                </div>
-                <div class="drop-item">
-                    <i class="bi bi-envelope"></i>
-                    <p>fahdabuoolila.px@gmail.com</p>
-                </div>
-                <div class="drop-item logout">
-                    <i class="bi bi-box-arrow-right"></i>
-                    <p>logout</p>
-                </div>
-            </div>
-        </header>
-        <aside id="menu" class="small-menu ">
             <div class="menu-content">
                 <ul class="list">
                     <li class="item main">
                         <div class="item-header opened">
-                            <a href="index.html" class="active">
+                            <a href="index.html" >
                                 <div>
                                     <i class="bi bi-house"></i>
                                     <p>dashboard</p>
@@ -76,10 +78,10 @@
                     </li>
                     <li class="item">
                         <div class="item-header">
-                            <a href="#">
+                            <a href="#" class="active">
                                 <div>
                                     <i class="bi bi-terminal"></i>
-                                    <p>products</p>
+                                    <p>Products</p>
                                 </div>
                                 <i class="bi bi-caret-right-fill"></i>
                             </a>
@@ -603,7 +605,7 @@
                 <ul class="list">
                     <li class="item main">
                         <div class="item-header opened">
-                            <a href="index.html" class="active">
+                            <a href="index.html">
                                 <div>
                                     <i class="bi bi-house"></i>
                                     <p>dashboard</p>
@@ -613,7 +615,7 @@
                     </li>
                     <li class="item">
                         <div class="item-header">
-                            <a href="#">
+                            <a href="#"  class="active">
                                 <div>
                                     <i class="bi bi-terminal"></i>
                                     <p>products</p>
@@ -1104,26 +1106,90 @@
                         <p>Dashboard</p>
                     </a>
                     <span class="text-light">/</span>
+                    <a href="active_projects.html">
+                        <p>Completed Projects</p>
+                    </a>
+                    <span class="text-light">/</span>
                 </div>
                 <div class="container">
-                    <div class="card">
-                        <div class="img-card">
-                            <img src="img/profile.jpg" alt="person">
-                        </div>
-                        <div class="content-card">
-                            <div class="div-name">
-                                Hi, <span id="user_name" class="text-light">Fahd.Abuoolila</span>
+                    <div class="search-bar">
+                        <div class="top">
+                            <div class="filter">
+                                <select name="client" id="client">
+                                    <option value="ziad">ziad</option>
+                                    <option value="body">body</option>
+                                    <option value="diab">diab</option>
+                                </select>
+                                <select name="filter" id="filter">
+                                    <option value="all">All Projects</option>
+                                    <option value="active">Active Projects</option>
+                                    <option value="completed">Completed Projects</option>
+                                </select>
+                                <button type="submit" name="show" class="show">
+                                    show
+                                </button>
                             </div>
-                            <div class="div-job">
-                                <span id="user_job" class="text-light">manager</span>
+                            <div class="search">
+                                <input type="text" name="search" placeholder="Search for projects...">
+                                <button>
+                                    <i class="bi bi-search"></i>
+                                </button>
                             </div>
                         </div>
+                        <div class="bottom">
+                            <a href="newProject.html">
+                                <button>
+                                    New Project
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr  class="text-light">
+                                    <th>Project Name</th>
+                                    <th>Client</th>
+                                    <th>Status</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Project 1</td>
+                                    <td>Client A</td>
+                                    <td>Active</td>
+                                    <td>2023-01-01</td>
+                                    <td>2023-12-31</td>
+                                    <td id="actions">
+                                        <button>
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <div class="item-actions">
+                                            <div class="list-item" id="edit">
+                                                <i class="bi bi-pencil-square"></i>
+                                                <p>Edit</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="list-item" id="show">
+                                                <i class="bi bi-eye"></i>
+                                                <p>Show</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
         <!-- js -->
         <script src="js/jquery-3.6.4.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/projects.js"></script>
     </body>
 </html>
