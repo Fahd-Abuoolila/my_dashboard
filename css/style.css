@@ -323,6 +323,11 @@ body {
     font-size: 12px;
     border: 2px solid var(--fourth-color);
 } */
+.hovered{
+    background: var(--main-color) !important;
+    border-radius: 20px;
+    color: var(--seventh-color) !important;
+}
 .dashboard-header {
     display: none;
     justify-content: space-between;
@@ -668,7 +673,7 @@ body {
     top: 0;
     left: -259px;
     background: var(--second-color);
-    width: 18.2rem;
+    width: 19.2rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -754,6 +759,11 @@ body {
     font-size: 1rem;
     margin-right: 1rem;
 }
+
+#menu>.menu-content>ul>li.active .other-list {
+    display: block ;
+}
+
 
 #menu>.menu-content>ul>li .other-list {
     list-style: none;

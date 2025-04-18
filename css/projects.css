@@ -270,8 +270,9 @@ textarea:disabled {
 
 .table tbody td {
     padding: 15px;
-    font-size: 14px;
+    font-size: 15px;
     color: #333;
+    font-weight: 500;
 }
 
 /* تنسيق الزر الرئيسي */

@@ -6,6 +6,6 @@ btn_items.addEventListener('click', function() {
 });
 document.addEventListener("click", (e) => {
     if (e.target !== btn_items && e.target !== item_actions && !btn_items.contains(e.target)) {
-        item_actions.classList.toggle('show');
+        item_actions.classList.remove('show');
     }
 });
