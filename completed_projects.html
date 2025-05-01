@@ -1133,7 +1133,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr id="row_project">
                                     <td>Project 1</td>
                                     <td>Client A</td>
                                     <td>Completed</td>
@@ -1149,64 +1149,256 @@
                                                 <p>Edit</p>
                                             </div>
                                             <div class="line"></div>
-                                            <div class="list-item" id="show">
+                                            <div class="list-item" id="showbtn">
                                                 <i class="bi bi-eye"></i>
                                                 <p>Show</p>
                                             </div>
                                         </div>
-                                    </td>
-                                    <div class="overblock">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="edit_item">
-                                                    Edit Project
-                                                    <span id="num_of_item"> 
-                                                        dashboard
-                                                    </span>
-                                                </h5>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form action="" method="post">
-                                                    <div>
-                                                        <label for="project_name">Project Name:</label>
-                                                        <input type="text" placeholder="Enter the new name..." id="project_name" class="" name="project_name" value="">
-                                                    </div>
-                                                    <div>
-                                                        <label for="project_client">Project Client:</label>
-                                                        <input list="client" type="text" placeholder="Enter the new client..." id="project_client" class="" name="project_client" value="">
-                                                        <datalist id="client">
-                                                            <option value="ziad">
-                                                            <option value="body">
-                                                            <option value="diab">
-                                                            <option value="fahd">
-                                                        </datalist>
-                                                    </div>
-                                                    <div>
-                                                        <label for="project_state">Project State:</label>
-                                                        <select class="" id="project_state"  name="project_state" value="" placeholder="Enter the new status..." >
-                                                            <option value="active">Active Projects</option>
-                                                            <option value="completed">Completed Projects</option>
-                                                            <option value="ؤanceled">Canceled project</option>
-                                                        </select>
-                                                    </div>
-                                                    <div>
-                                                        <label for="start_date">Start Date:</label>
-                                                        <input type="date" placeholder="Enter the start date..." id="start_date" class="" name="start_date" value="">
-                                                    </div>
-                                                    <div>
-                                                        <label for="end_date">End Date</label>
-                                                        <input type="date" placeholder="Enter the end date..." id="end_date" class="" name="end_date" value="">
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="submit" class="btn btn-primary">Apply</button>
-                                                        <button type="button" class="btn btn-secondary close-overblock">Close</button>
-                                                    </div>
-                                                </form>
+                                        <div id="overblock">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="edit_item">
+                                                        Edit Project
+                                                        <span id="num_of_item">
+                                                            dashboard1
+                                                        </span>
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="" method="post">
+                                                        <div>
+                                                            <label for="project_name">Project Name:</label>
+                                                            <input type="text" placeholder="Enter the new name..." id="project_name" class=""
+                                                                name="project_name" value="">
+                                                        </div>
+                                                        <div>
+                                                            <label for="project_client">Project Client:</label>
+                                                            <input list="client" type="text" placeholder="Enter the new client..."
+                                                                id="project_client" class="" name="project_client" value="">
+                                                            <datalist id="client">
+                                                                <option value="ziad">
+                                                                <option value="body">
+                                                                <option value="diab">
+                                                                <option value="fahd">
+                                                            </datalist>
+                                                        </div>
+                                                        <div>
+                                                            <label for="project_state">Project State:</label>
+                                                            <select class="" id="project_state" name="project_state" value=""
+                                                                placeholder="Enter the new status...">
+                                                                <option value="active">Active Projects</option>
+                                                                <option value="completed">Completed Projects</option>
+                                                                <option value="ؤanceled">Canceled project</option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <label for="start_date">Start Date:</label>
+                                                            <input type="date" placeholder="Enter the start date..." id="start_date" class=""
+                                                                name="start_date" value="">
+                                                        </div>
+                                                        <div>
+                                                            <label for="end_date">End Date</label>
+                                                            <input type="date" placeholder="Enter the end date..." id="end_date" class=""
+                                                                name="end_date" value="">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary">Apply</button>
+                                                    <button type="button" class="btn btn-secondary close-overblock">Close</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div id="showblock">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="edit_item">
+                                                        Edit Project
+                                                        <span id="num_of_item">
+                                                            dashboard2
+                                                        </span>
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="" method="post">
+                                                        <div>
+                                                            <label for="project_name">Project Name:</label>
+                                                            <input type="text" placeholder="Enter the new name..." id="project_name" class=""
+                                                                name="project_name" value="">
+                                                        </div>
+                                                        <div>
+                                                            <label for="project_client">Project Client:</label>
+                                                            <input list="client" type="text" placeholder="Enter the new client..."
+                                                                id="project_client" class="" name="project_client" value="">
+                                                            <datalist id="client">
+                                                                <option value="ziad">
+                                                                <option value="body">
+                                                                <option value="diab">
+                                                                <option value="fahd">
+                                                            </datalist>
+                                                        </div>
+                                                        <div>
+                                                            <label for="project_state">Project State:</label>
+                                                            <select class="" id="project_state" name="project_state" value=""
+                                                                placeholder="Enter the new status...">
+                                                                <option value="active">Active Projects</option>
+                                                                <option value="completed">Completed Projects</option>
+                                                                <option value="ؤanceled">Canceled project</option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <label for="start_date">Start Date:</label>
+                                                            <input type="date" placeholder="Enter the start date..." id="start_date" class=""
+                                                                name="start_date" value="">
+                                                        </div>
+                                                        <div>
+                                                            <label for="end_date">End Date</label>
+                                                            <input type="date" placeholder="Enter the end date..." id="end_date" class=""
+                                                                name="end_date" value="">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary">Apply</button>
+                                                    <button type="button" class="btn btn-secondary close-showblock">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                 </tr>
-                                
+                                <tr id="row_project">
+                                    <td>Project 1</td>
+                                    <td>Client A</td>
+                                    <td>Completed</td>
+                                    <td>2023-01-01</td>
+                                    <td>2023-12-31</td>
+                                    <td id="actions">
+                                        <button>
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <div class="item-actions">
+                                            <div class="list-item edit_project" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-pencil-square"></i>
+                                                <p>Edit</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="list-item" id="showbtn">
+                                                <i class="bi bi-eye"></i>
+                                                <p>Show</p>
+                                            </div>
+                                        </div>
+                                        <div id="overblock">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="edit_item">
+                                                        Edit Project
+                                                        <span id="num_of_item">
+                                                            fahd1
+                                                        </span>
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="" method="post">
+                                                        <div>
+                                                            <label for="project_name">Project Name:</label>
+                                                            <input type="text" placeholder="Enter the new name..." id="project_name" class=""
+                                                                name="project_name" value="">
+                                                        </div>
+                                                        <div>
+                                                            <label for="project_client">Project Client:</label>
+                                                            <input list="client" type="text" placeholder="Enter the new client..."
+                                                                id="project_client" class="" name="project_client" value="">
+                                                            <datalist id="client">
+                                                                <option value="ziad">
+                                                                <option value="body">
+                                                                <option value="diab">
+                                                                <option value="fahd">
+                                                            </datalist>
+                                                        </div>
+                                                        <div>
+                                                            <label for="project_state">Project State:</label>
+                                                            <select class="" id="project_state" name="project_state" value=""
+                                                                placeholder="Enter the new status...">
+                                                                <option value="active">Active Projects</option>
+                                                                <option value="completed">Completed Projects</option>
+                                                                <option value="ؤanceled">Canceled project</option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <label for="start_date">Start Date:</label>
+                                                            <input type="date" placeholder="Enter the start date..." id="start_date" class=""
+                                                                name="start_date" value="">
+                                                        </div>
+                                                        <div>
+                                                            <label for="end_date">End Date</label>
+                                                            <input type="date" placeholder="Enter the end date..." id="end_date" class=""
+                                                                name="end_date" value="">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary">Apply</button>
+                                                    <button type="button" class="btn btn-secondary close-overblock">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="showblock">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="edit_item">
+                                                        Edit Project
+                                                        <span id="num_of_item">
+                                                            fahd2
+                                                        </span>
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="" method="post">
+                                                        <div>
+                                                            <label for="project_name">Project Name:</label>
+                                                            <input type="text" placeholder="Enter the new name..." id="project_name" class=""
+                                                                name="project_name" value="">
+                                                        </div>
+                                                        <div>
+                                                            <label for="project_client">Project Client:</label>
+                                                            <input list="client" type="text" placeholder="Enter the new client..."
+                                                                id="project_client" class="" name="project_client" value="">
+                                                            <datalist id="client">
+                                                                <option value="ziad">
+                                                                <option value="body">
+                                                                <option value="diab">
+                                                                <option value="fahd">
+                                                            </datalist>
+                                                        </div>
+                                                        <div>
+                                                            <label for="project_state">Project State:</label>
+                                                            <select class="" id="project_state" name="project_state" value=""
+                                                                placeholder="Enter the new status...">
+                                                                <option value="active">Active Projects</option>
+                                                                <option value="completed">Completed Projects</option>
+                                                                <option value="ؤanceled">Canceled project</option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <label for="start_date">Start Date:</label>
+                                                            <input type="date" placeholder="Enter the start date..." id="start_date" class=""
+                                                                name="start_date" value="">
+                                                        </div>
+                                                        <div>
+                                                            <label for="end_date">End Date</label>
+                                                            <input type="date" placeholder="Enter the end date..." id="end_date" class=""
+                                                                name="end_date" value="">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary">Apply</button>
+                                                    <button type="button" class="btn btn-secondary close-showblock">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

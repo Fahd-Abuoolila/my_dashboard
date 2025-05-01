@@ -134,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target !== settings_menu_sec && e.target !== settings_sec && !settings_sec.contains(e.target)) {
             settings_menu_sec.classList.remove("open");
         }
-        console.log(e.target);
     });
     settings_menu.addEventListener("click", (e) => {
         e.stopPropagation();

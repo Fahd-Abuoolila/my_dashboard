@@ -401,7 +401,8 @@ td .item-actions.show {
     cursor: pointer;
     transition: .5s;
 }
-.modal-content .modal-footer button:hover{
+
+.modal-content .modal-footer button:hover {
     font-size: 16px;
     font-weight: bold;
 }
